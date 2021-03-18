@@ -1,0 +1,23 @@
+<mat-toolbar color="primary" class="fix-nav">
+    <button type="button" mat-icon-button class="visible-md" (click)="toggleSidebar()">
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+    </button>
+    <div class="nav-brand" >
+        ZOMATO 
+<div>Menu Dashboard</div>
+    </div>
+    
+    <form class="hidden-sm" style="margin-left: 20px; margin-top: 5px;color: black;">
+        <mat-form-field >
+            <input matInput [placeholder]="'Search' | translate">
+        </mat-form-field>
+        
+    </form>
+    <span class="nav-spacer"></span>
+  
+  
+    
+    <button mat-icon-button (click)="onLoggedout()">
+        <mat-icon>exit_to_app</mat-icon>
+    </button>
+</mat-toolbar>

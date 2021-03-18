@@ -1,0 +1,104 @@
+
+   
+
+<div class="container" >
+    <div class="row" style="margin-top: -19px; margin-left: -19px;">
+        <div class="column" style="background-color: white;">
+
+            <mat-expansion-panel  hideToggle="true" (click)="click()" style="
+            /* padding: 10%; */
+            margin-left: 4%;
+            margin-right: 4%;
+            margin-top: 5%;
+            background-color: #e6ffff;
+        ">
+                <mat-expansion-panel-header >
+                  <mat-panel-title>
+                      <mat-icon>{{icon  ? 'keyboard_arrow_down' : 'keyboard_arrow_right' }}</mat-icon>
+                      <div  class="col-md-9">
+                    <b> Starters 
+                        
+                    </b>
+                      </div>
+                  </mat-panel-title>
+       
+                </mat-expansion-panel-header>
+                <mat-icon>crop_3_2</mat-icon>Panner Tikka
+              </mat-expansion-panel>
+
+            <p>Menu Listing</p>
+            <mat-expansion-panel  hideToggle="true" (click)="click()">
+                <mat-expansion-panel-header >
+                  <mat-panel-title>
+                      <mat-icon>{{icon  ? 'keyboard_arrow_down' : 'keyboard_arrow_right' }}</mat-icon>
+                      <div  class="col-md-9">
+                    <b> Waffles</b>
+                      </div>
+                  </mat-panel-title>
+          
+                </mat-expansion-panel-header>
+
+                <p><mat-icon>crop_3_2</mat-icon>Vania waffie</p>
+                <p><mat-icon>crop_3_2</mat-icon>Caramal waffie</p>
+                <p><mat-icon>crop_3_2</mat-icon>Chocolate waffie</p>
+                <p><mat-icon>crop_3_2</mat-icon>Pokket waffie</p>
+                
+
+
+              </mat-expansion-panel>
+
+              <mat-expansion-panel  hideToggle="true" (click)="click()">
+                <mat-expansion-panel-header >
+                  <mat-panel-title>
+                      <mat-icon>{{icon  ? 'keyboard_arrow_down' : 'keyboard_arrow_right' }}</mat-icon>
+                      <div  class="col-md-9">
+                    <b> Naachos </b>
+                      </div>
+                  </mat-panel-title>
+          
+                </mat-expansion-panel-header>
+              </mat-expansion-panel>
+              <mat-expansion-panel  hideToggle="true" (click)="click()">
+                <mat-expansion-panel-header >
+                  <mat-panel-title>
+                      <mat-icon>{{icon  ? 'keyboard_arrow_down' : 'keyboard_arrow_right' }}</mat-icon>
+                      <div  class="col-md-9">
+                    <b> Momos </b>
+                      </div>
+                  </mat-panel-title>
+          
+                </mat-expansion-panel-header>
+              </mat-expansion-panel>
+              <mat-expansion-panel  hideToggle="true" (click)="click()">
+                <mat-expansion-panel-header >
+                  <mat-panel-title>
+                      <mat-icon>{{icon  ? 'keyboard_arrow_down' : 'keyboard_arrow_right' }}</mat-icon>
+                      <div  class="col-md-9">
+                    <b> Starters </b>
+                      </div>
+                  </mat-panel-title>
+          
+                </mat-expansion-panel-header>
+              </mat-expansion-panel>
+        </div>
+        <div class="column" >
+
+          <div class="row">
+            <div class="column" >
+              StartDate <div *ngFor="let item of myArr "> 
+                {{item.startDate | date: 'dd/MM/yyyy'}}
+               
+              </div></div>
+          <div class="column" >
+          EndDate<div *ngFor="let item of myArr "> 
+            {{item.endDate | date: 'dd/MM/yyyy'}}
+          </div>
+          </div>
+       
+        
+
+      </div>
+
+    </div>
+   
+    

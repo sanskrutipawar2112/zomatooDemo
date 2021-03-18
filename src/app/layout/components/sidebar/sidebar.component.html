@@ -1,0 +1,16 @@
+<div id="sidebar">
+    <mat-nav-list>
+        <a mat-list-item [routerLinkActive]="'active'" [routerLink]="['/dashboard']">
+            <mat-icon class="sidenav-icon">dashboard</mat-icon> {{ 'Charges' | translate }}
+        </a>
+        <a mat-list-item [routerLinkActive]="'active'" [routerLink]="['/DeliveryMenu']">
+            <mat-icon class="sidenav-icon">build</mat-icon> {{ 'Delivery Menu' | translate }}
+        </a>
+        <a mat-list-item [routerLinkActive]="'active'" [routerLink]="['/MealForOne']">
+            <mat-icon class="sidenav-icon">people</mat-icon> {{ 'Meals for one' | translate }}
+        </a>
+        <a mat-list-item [routerLinkActive]="'active'" [routerLink]="['/screen2']">
+            <mat-icon class="sidenav-icon">people</mat-icon> {{ 'Help' | translate }}
+        </a>
+    </mat-nav-list>
+</div>
